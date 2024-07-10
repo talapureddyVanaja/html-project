@@ -11,10 +11,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></link>
 <style>
 .header {
-background-color:lightpink;
-warap:flex-warap;
+  
+  background-color:rgb(204, 201, 201);
+   
 }
 .header ul{
 display:inline-flex;
@@ -25,8 +27,13 @@ list-style:none;
 .header ul li{
 padding-right:10px;
 }
+.header ul li a{
+	color: #000;
+	text-emphasis: none;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
 }
 
 .flip-card {
@@ -80,13 +87,90 @@ body {
 
 .container {
   padding: 2px 16px;
+}
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+	
+    .footer{
+        background-color: black;
+    }
+    .footercontainer{
+		width: 100%;
+		padding: 70px 30px 20px;
+	}
+	.socialiocan{
+		display: flex;
+		justify-content: center;
+	}
+	.socialiocan a{
+		text-decoration: none;
+		padding:10px;
+		background-color: white;
+		margin: 10px;
+		border-radius: 50%;
+
+	}
+	.socialiocan a i{
+		font-size:2em ;
+		color: black;
+		opacity: 0.9;
+	}
+	/*hover effect on social medai iocons*/
+	.socialiocan a :hover{
+		color: black;
+		transform: 0.5s;
+	}
+	.socialiocan a :hover i{
+		color: white;
+		transition: 0.5s;
+
+	}
+	.footernav{
+		margin: 30px;
+	}
+	.footernav ul{
+		display: flex;
+		justify-content: center;
+	}
+	.footernav ul li a{
+		color: white;
+		margin: 20px;
+		text-decoration: none;
+		font-size: 1.3em;
+		opacity: 0.7;
+		transition: 0.5s;
+
+
+	}
+	.footernav ul li a:hover{
+		opacity: 1;
+
+	}
+	.footerbottem{
+		background-color: #000;
+		padding: 20px;
+		text-align: center;
+	}
+	.footerbottem{
+		color: white;
+	}
+	.designer{
+		opacity: 0.7;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 400;
+		margin: 0px 5px;
+	}
 
 
    
 
 </style>
 </head>
-<body>
+<body  background="https://i.pinimg.com/originals/8e/f3/f7/8ef3f7582ad5f99b05dc8a0e9e4af09a.png">
 <div class="container-fluid header">
 <img src="https://tse2.mm.bing.net/th?id=OIP.ArTreFjDiycDz-WeMHzcbwHaHa&pid=Api&P=0&h=180" width=90px>
 <ul>
@@ -104,7 +188,9 @@ body {
   <div class="container">
   <center/>
     <h2><b>PUMA</b></h2> 
-    <button>buy</button> 
+  <div class="button">
+    <button>buy</button>
+  </div>
   </div>
 </div>
 </div>
@@ -184,6 +270,33 @@ body {
 </div>
 </div>
 </br>
+<div class="footer">
+  <footer>
+  <div class="footercontainer">
+    <div class="socialiocan">
+       <a href=""><i class="fa-brands fa-facebook"></i></a>
+       <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+       <a href=""><i class="fa-brands fa-twitter"></i></a>
+       <a href=""><i class="fa-brands fa-instagram"></i></a>
+  
+    </div>
+    <div class="footernav">
+       <ul >
+         <li><a href="">home</a></li>
+         <li><a href="">about</a></li>
+         <li><a href="">image</a></li>
+         <li><a href="">contact</a></li>
+       </ul>
+    </div>
+  </div>
+    <div class="footerbottem">
+       <p>copyright &copy;2022; designed by <spam class="designer">fname</spam>
+       </p>
+  
+    </div>
+    
+  </footer>
+  </div>
 
 
 </body>
